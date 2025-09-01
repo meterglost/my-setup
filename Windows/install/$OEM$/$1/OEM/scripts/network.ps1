@@ -1,5 +1,5 @@
 #Requires -RunAsAdministrator
-$ErrorActionPreference = "Stop"
+$ErrorActionPreference = "Inquire"
 
 
 $InterfaceList = Get-NetAdapter | Where-Object { $_.Status -Eq "Up" -And $_.InterfaceDescription -NotLike "*Virtual*" }
